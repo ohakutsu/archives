@@ -1,0 +1,17 @@
+{
+  "name": "yarn-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TakuyaHanada/yarn-sample.git",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  },
+  "scripts": {
+    "build": "webpack --mode development"
+  }
+}
