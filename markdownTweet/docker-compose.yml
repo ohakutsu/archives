@@ -1,0 +1,23 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: yarn start
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    tty: true
+    stdin_open: true
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: p@ssword
+    volumes:
+      - ./db/mysql_init/:/docker-entrypoint-initdb.d
+      - ./db/mysql_conf/my.cnf:/etc/mysql/my.cnf
+      - db-volume:/var/lib/mysql
+volumes:
+  db-volume:

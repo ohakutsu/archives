@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel='stylesheet' href='/stylesheets/tweetCard.css' />
+  </head>
+  <body>
+    <%- include('shared/header', {}) %>
+    
+    <main class="container">
+      <% for(let item of items) { %>
+        <%- include('shared/tweetCard', {item, markdown, isShowDestroyButton: false}) %>
+      <% } %>
+      <div class="item-pagenate">
+        <ul class="pagination">
+          <% const { page, hasNextPage } = pagenate; %>
+          <% if (page > 1) { %>
+          <li class="page-item">
+            <a class="page-link" href="/home/<%= page - 1 %>">&laquo;</a>
+          </li>
+          <% } %>
+          <li class="page-item active">
+            <a class="page-link"><%= page %></a>
+          </li>
+          <% if (hasNextPage) { %>
+          <li class="page-item">
+            <a class="page-link" href="/home/<%= page + 1 %>">&raquo;</a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </main>
+
+    <%- include('shared/footer', {}) %>
+  </body>
+</html>
