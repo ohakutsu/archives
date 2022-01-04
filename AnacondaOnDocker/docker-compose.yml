@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  anaconda:
+    build: .
+    command: jupyter-notebook --port 58888 --ip=0.0.0.0 --allow-root
+    volumes:
+      - ./work:/work
+    ports:
+      - 58888:58888
