@@ -1,0 +1,11 @@
+{
+  "name": "simple-timer",
+  "repository": "git@github.com:ohakutsu/simple-timer.git",
+  "private": true,
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "scripts": {
+    "start": "http-server ./docs"
+  }
+}
