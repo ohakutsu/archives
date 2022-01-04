@@ -1,0 +1,14 @@
+{
+  "name": "Qi-Ri2",
+  "short_name": "Qi-Ri2",
+  "icons": [
+    {
+      "src": "./static/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html#/",
+  "display": "standalone",
+  "background_color": "#FFFFFF"
+}
