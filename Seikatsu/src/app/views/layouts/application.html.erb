@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118308350-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-118308350-8');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= page_title %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render "shared/header" %>
+    <main>
+      <div class="main container">
+        <% if flash.notice %>
+          <div class="notice alert alert-success" role="alert">
+            <%= flash.notice %>
+          </div>
+        <% end %>
+        <% if flash.alert %>
+          <div class="alert alert alert-danger" role="alert">
+            <%= flash.alert %>
+          </div>
+        <% end %>
+
+        <%= yield %>
+      </div>
+    </main>
+    <%= render "shared/footer" %>
+  </body>
+</html>

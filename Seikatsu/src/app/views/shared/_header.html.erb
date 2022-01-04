@@ -1,0 +1,43 @@
+<header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <%= link_to "Seikatsu", :root, class: "navbar-brand" %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <%= link_to "ホーム", :root, class: "nav-link" %>
+          </li>
+          <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to "投稿する", [:new, :item], class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "マイページ", current_user, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "設定", edit_user_registration_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-link" %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to "新規登録", new_user_registration_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "ログイン", new_user_session_path, class: "nav-link" %>
+            </li>
+          <% end %>
+        </ul>
+        <%= form_tag :search_items, method: :get, class: "header__search form-inline my-2 my-lg-0" do %>
+          <%= text_field_tag "query", params[:query], class: "header__search_input form-control mr-sm-2", placeholder: "キーワードを入力" %>
+          <%= submit_tag "検索", class: "header__search_submit btn btn-primary my-2 my-sm-0" %>
+        <% end %>
+      </div>
+    </div>
+  </nav>
+</header>

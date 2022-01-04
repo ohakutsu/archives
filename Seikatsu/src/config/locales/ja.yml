@@ -1,0 +1,20 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      item: 記事
+      vote: いいね
+    attributes:
+      user:
+        id: ID
+        name: ユーザー名
+        description: 説明
+        password: パスワード
+        profile_image: プロフィール画像
+        new_profile_image: 新しいプロフィール画像
+        remove_profile_image: 現在のプロフィール画像を削除
+      item:
+        id: ID
+        user: ユーザーID
+        title: タイトル
+        body: 本文

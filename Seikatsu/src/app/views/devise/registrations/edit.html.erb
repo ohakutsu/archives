@@ -1,0 +1,68 @@
+<% @page_title = "アカウント設定" %>
+
+<%= render "devise/shared/error_messages", resource: resource %>
+
+<section class="account-setting devise-form tile">
+  <h1 class="devise-form__title">アカウント設定</h1>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+
+    <div class="form-group">
+      <%= f.label :profile_image %>
+      <div class="form-group">
+        <% if current_user.profile_image.attached? %>
+          <%= image_tag current_user.profile_image.variant(resize: "100x100"), class: "" %>
+          <div class="form-check">
+            <%= f.check_box :remove_profile_image, class: "form-check-input" %>
+            <%= f.label :remove_profile_image, class: "form-check-label" %>
+          </div>
+        <% end %>
+      </div>
+      <%= f.file_field :new_profile_image, class: "form-control-file" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, autofocus: true, class: "form-control", placeholder: "名前を入力" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :description %>
+      <%= f.text_field :description, class: "form-control", placeholder: "説明を入力" %>
+    </div>
+
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control", placeholder: "メールアドレスを入力" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :password, "新しいパスワード" %>
+      <%= f.password_field :password, class: "form-control", placeholder: "新しいパスワードを入力" %>
+      <% if @minimum_password_length %>
+        <small class="form-text text-muted">パスワードを変更しない場合は空欄</small>
+        <small class="form-text text-muted"><%= @minimum_password_length %>文字以上</small>
+      <% end %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :password_confirmation, "新しいパスワードの確認" %>
+      <%= f.password_field :password_confirmation, class: "form-control", placeholder: "もう一度新しいパスワードを入力" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "変更を保存", class: "btn btn-primary" %>
+    </div>
+  <% end %>  
+</section>
+
+<section class="cancel-account devise-form tile">
+  <h1 class="devise-form__title">アカウントの削除</h1>
+
+  <p>アカウントを削除すると、すべてのデータが消えてしまいます。</p>
+  <%= button_to "アカウントを削除する", registration_path(resource_name), data: { confirm: "本当に削除しますか？「OK」を選択すると、戻ることはできません。" }, method: :delete, class: "btn btn-danger" %>
+</section>
