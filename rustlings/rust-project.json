@@ -1,0 +1,480 @@
+{
+  "sysroot_src": "/Users/ohakutsu/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/library",
+  "crates": [
+    {
+      "root_module": "clippy/clippy1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "clippy/clippy2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "clippy/clippy3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "conversions/as_ref_mut.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "conversions/from_into.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "conversions/from_str.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "conversions/try_from_into.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "conversions/using_as.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "enums/enums1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "enums/enums2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "enums/enums3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "error_handling/errors1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "error_handling/errors2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "error_handling/errors3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "error_handling/errors4.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "error_handling/errors5.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "error_handling/errors6.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "functions/functions1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "functions/functions2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "functions/functions3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "functions/functions4.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "functions/functions5.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "generics/generics1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "generics/generics2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "hashmaps/hashmaps1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "hashmaps/hashmaps2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "hashmaps/hashmaps3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "if/if1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "if/if2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "intro/intro1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "intro/intro2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "lifetimes/lifetimes1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "lifetimes/lifetimes2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "lifetimes/lifetimes3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "macros/macros1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "macros/macros2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "macros/macros3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "macros/macros4.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "modules/modules1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "modules/modules2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "modules/modules3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "move_semantics/move_semantics1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "move_semantics/move_semantics2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "move_semantics/move_semantics3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "move_semantics/move_semantics4.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "move_semantics/move_semantics5.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "move_semantics/move_semantics6.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "options/options1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "options/options2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "options/options3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "primitive_types/primitive_types1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "primitive_types/primitive_types2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "primitive_types/primitive_types3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "primitive_types/primitive_types4.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "primitive_types/primitive_types5.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "primitive_types/primitive_types6.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "quiz1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "quiz2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "quiz3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "standard_library_types/arc1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "standard_library_types/box1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "standard_library_types/cow1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "standard_library_types/iterators1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "standard_library_types/iterators2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "standard_library_types/iterators3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "standard_library_types/iterators4.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "standard_library_types/iterators5.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "standard_library_types/rc1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "strings/strings1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "strings/strings2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "strings/strings3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "strings/strings4.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "structs/structs1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "structs/structs2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "structs/structs3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "tests/tests1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "tests/tests2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "tests/tests3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "threads/threads1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "threads/threads2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "threads/threads3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "tmp/src/main.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "traits/traits1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "traits/traits2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "traits/traits3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "traits/traits4.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "traits/traits5.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "variables/variables1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "variables/variables2.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "variables/variables3.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "variables/variables4.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "variables/variables5.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "variables/variables6.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "vecs/vecs1.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "root_module": "vecs/vecs2.rs",
+      "edition": "2021",
+      "deps": []
+    }
+  ]
+}
